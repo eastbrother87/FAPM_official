@@ -34,7 +34,12 @@ pip install tqdm
 ## Future work
 
 - [x] Inference Code
+- [x] Pretrained Memory 
 - [ ] Training Code 
+
+## Download Pretrained Memory
+
+
 
 ## Usage
 
