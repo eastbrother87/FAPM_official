@@ -30,3 +30,14 @@ pip install PIL
 pip install tqdm
 
 ```
+
+## Future work
+
+- [ x ] Inference Code
+- [ ] Training Code 
+
+## Usage
+
+```sh
+python test.py
+```
