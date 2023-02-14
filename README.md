@@ -39,7 +39,9 @@ pip install tqdm
 
 ## Download Pretrained Memory
 
-
+```sh
+https://drive.google.com/drive/folders/1z4dplHddceYLoYiKe29NY_SxeIJFstPu?usp=share_link
+```
 
 ## Usage
 
