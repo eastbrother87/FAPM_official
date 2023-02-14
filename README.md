@@ -39,5 +39,5 @@ pip install tqdm
 ## Usage
 
 ```sh
-python test.py --category=capsule
+python test.py --category=capsule --n_neighbors=4
 ```
