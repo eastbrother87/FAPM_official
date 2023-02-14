@@ -8,7 +8,7 @@ The FAPM is proposed to find an anomaly industrial object. Our model is ranked #
 
 ##Development setup
 
-'''
+'''sh
 conda create -n FAPM
 conda activate FAPM
 
