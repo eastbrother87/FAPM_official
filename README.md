@@ -39,5 +39,5 @@ pip install tqdm
 ## Usage
 
 ```sh
-python test.py
+python test.py --category=capsule
 ```
