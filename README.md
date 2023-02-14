@@ -33,7 +33,7 @@ pip install tqdm
 
 ## Future work
 
-- [ x ] Inference Code
+- [x] Inference Code
 - [ ] Training Code 
 
 ## Usage
