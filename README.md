@@ -10,6 +10,7 @@ The FAPM is proposed to find an anomaly industrial object. Our model is ranked #
 
 ## Development setup
 
+conda environment
 ```sh
 conda create -n FAPM
 conda activate FAPM
@@ -17,6 +18,8 @@ conda activate FAPM
 conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cudatoolkit=11.3 -c pytorch
 ```
 
+
+pip environment
 ```sh
 pip install sklearn
 pip install einops
