@@ -44,4 +44,4 @@ Inference Code
 ```sh
 python test.py --category=capsule --n_neighbors=4
 ```
-You can download [pretraiend memory](https://drive.google.com/drive/folders/1z4dplHddceYLoYiKe29NY_SxeIJFstPu?usp=share_link) at this goolge link.
+You can download [pretrained memory](https://drive.google.com/drive/folders/1z4dplHddceYLoYiKe29NY_SxeIJFstPu?usp=share_link) from this google link.
