@@ -1,6 +1,5 @@
 # FAPM_official
 This repository contains the implementation of FAPM(2022 arxiv).
-This project 
 
 https://arxiv.org/abs/2211.07381
 
