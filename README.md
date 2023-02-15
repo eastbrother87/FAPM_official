@@ -25,7 +25,6 @@ pip install einops
 pip install pytorch_lightning
 pip install opencv-python
 pip install scipy
-pip install PIL
 pip install tqdm
 
 ```
