@@ -1,5 +1,5 @@
 # FAPM_official
-This repository contains the implementation of FAPM (2022 arxiv).
+This repository contains the implementation of FAPM (2023 ICASSP).
 
 https://arxiv.org/abs/2211.07381
 
@@ -15,17 +15,11 @@ conda create -n FAPM
 conda activate FAPM
 
 conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cudatoolkit=11.3 -c pytorch
-```
-
-
-pip environment
-```sh
-pip install sklearn
-pip install einops
-pip install pytorch_lightning
-pip install opencv-python
-pip install scipy
-pip install tqdm
+conda install einops
+conda install pytorch_lightning
+conda install opencv-python
+conda install scipy
+conda install tqdm
 
 ```
 
