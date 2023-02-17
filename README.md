@@ -29,7 +29,7 @@ conda install tqdm
 
 ```
 ## Dataset
-Please download the MVTec dataset according to this [website](https://www.mvtec.com/company/research/datasets/mvtec-ad).
+Please download the MVTec dataset from this [website](https://www.mvtec.com/company/research/datasets/mvtec-ad).
 
 
 
