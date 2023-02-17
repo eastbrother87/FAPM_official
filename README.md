@@ -16,7 +16,7 @@ conda activate FAPM
 
 conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cudatoolkit=11.3 -c pytorch
 conda install einops
-conda install pytorch_lightning
+conda install pytorch_lightning -c conda-forge
 conda install opencv-python
 conda install scipy
 conda install tqdm
