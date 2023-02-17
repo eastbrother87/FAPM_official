@@ -7,6 +7,12 @@ https://arxiv.org/abs/2211.07381
 
 The FAPM is proposed to find an anomaly industrial object. Our model is ranked #10 in MvTEC AD benchmark, and this result can be found in papers with code (https://paperswithcode.com/sota/anomaly-detection-on-mvtec-ad). 
 
+## Future work
+
+- [x] Inference Code
+- [x] Pretrained Memory 
+- [ ] Training Code 
+
 ## Development setup
 
 conda environment
@@ -22,12 +28,8 @@ conda install scipy
 conda install tqdm
 
 ```
-
-## Future work
-
-- [x] Inference Code
-- [x] Pretrained Memory 
-- [ ] Training Code 
+## Dataset
+Please download the MVTec dataset according to this [website](https://www.mvtec.com/company/research/datasets/mvtec-ad).
 
 
 
