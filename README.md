@@ -48,5 +48,5 @@ Cite as below if you find this repository is helpful to your project:
 
 ## Acknowledgement
 
-Some code snippets are borrowed from [PatchCore_anomaly_detection](https://github.com/hcw-00/PatchCore_anomaly_detection) and [patchcore-inspection](https://github.com/amazon-science/patchcore-inspection). Thanks for these great projects.
+Some code snippets are borrowed from [PatchCore_anomaly_detection](https://github.com/hcw-00/PatchCore_anomaly_detection) and [patchcore-inspection](https://github.com/amazon-science/patchcore-inspection). I'm really appreciate to your great projects!!
 
