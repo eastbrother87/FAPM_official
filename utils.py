@@ -1,6 +1,5 @@
 #from this import d
 from sklearn.random_projection import SparseRandomProjection
-from sampling_methods.kcenter_greedy import kCenterGreedy
 from torch.utils.data import Dataset, DataLoader
 from sklearn.metrics import confusion_matrix
 from scipy.ndimage import gaussian_filter
@@ -24,7 +23,6 @@ from sklearn.metrics import roc_auc_score
 from torch import nn
 from sklearn.metrics import confusion_matrix
 import pickle
-from sampling_methods.kcenter_greedy import kCenterGreedy
 from sklearn.random_projection import SparseRandomProjection
 from sklearn.neighbors import NearestNeighbors
 from scipy.ndimage import gaussian_filter
@@ -97,17 +95,15 @@ def copy_files(src, dst, ignores=[]):
             os.makedirs(os.path.join(dst, file_name), exist_ok=True)
             copy_files(full_file_name, os.path.join(dst, file_name), ignores)
 
-def prep_dirs(root,category):
+def prep_dirs(root):
     # make embeddings dir
-    embeddings_path = os.path.join('./', 'embeddings_final_0.1_FINAL', category)
+    embeddings_path = os.path.join(root)
     os.makedirs(embeddings_path, exist_ok=True)
     # make sample dir
     sample_path = os.path.join(root, 'sample')
     os.makedirs(sample_path, exist_ok=True)
     # make source code record dir & copy
     source_code_save_path = os.path.join(root, 'src')
-    #os.makedirs(source_code_save_path, exist_ok=True)
-    #copy_files('./', source_code_save_path, ['.git','.vscode','__pycache__','logs','README','samples','LICENSE']) # copy source code
     return embeddings_path, sample_path, source_code_save_path
 
 def embedding_concat(x, y):

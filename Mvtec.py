@@ -1,5 +1,4 @@
 from sklearn.random_projection import SparseRandomProjection
-from sampling_methods.kcenter_greedy import kCenterGreedy
 from torch.utils.data import Dataset, DataLoader
 from sklearn.metrics import confusion_matrix
 from scipy.ndimage import gaussian_filter
@@ -23,7 +22,6 @@ from sklearn.metrics import roc_auc_score
 from torch import nn
 from sklearn.metrics import confusion_matrix
 import pickle
-from sampling_methods.kcenter_greedy import kCenterGreedy
 from sklearn.random_projection import SparseRandomProjection
 from sklearn.neighbors import NearestNeighbors
 from scipy.ndimage import gaussian_filter
