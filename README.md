@@ -34,3 +34,19 @@ Inference Code
 python test.py --category=capsule --n_neighbors=4
 ```
 You can download [pretrained memory](https://drive.google.com/drive/folders/1z4dplHddceYLoYiKe29NY_SxeIJFstPu?usp=share_link) from this google link.
+
+## Citation
+Cite as below if you find this repository is helpful to your project:
+'''sh
+@article{kim2022fapm,
+  title={FAPM: Fast Adaptive Patch Memory for Real-time Industrial Anomaly Detection},
+  author={Kim, Donghyeong and Park, Chaewon and Cho, Suhwan and Lee, Sangyoun},
+  journal={arXiv preprint arXiv:2211.07381},
+  year={2022}
+}
+'''
+
+## Acknowledgement
+
+Some code snippets are borrowed from [PatchCore_anomaly_detection](https://github.com/hcw-00/PatchCore_anomaly_detection) and [patchcore-inspection](https://github.com/amazon-science/patchcore-inspection). Thanks for these great projects.
+
