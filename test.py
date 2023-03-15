@@ -1,5 +1,4 @@
 from sklearn.random_projection import SparseRandomProjection
-from sampling_methods.kcenter_greedy import kCenterGreedy
 from torch.utils.data import Dataset, DataLoader
 from sklearn.metrics import confusion_matrix
 from scipy.ndimage import gaussian_filter
