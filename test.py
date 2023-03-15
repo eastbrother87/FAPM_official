@@ -27,7 +27,7 @@ from model import *
 def get_args():
     parser = argparse.ArgumentParser(description='ANOMALYDETECTION')
     parser.add_argument('--phase', choices=['train','test'], default='test')
-    parser.add_argument('--dataset_path', default='/data2/DH2/mvtec') # 'D:\Dataset\mvtec_anomaly_detection')#
+    parser.add_argument('--dataset_path', default='./mvtec') # 'D:\Dataset\mvtec_anomaly_detection')#
     parser.add_argument('--result_path', default='./results/') # 'D:\Project_Train_Results\mvtec_anomaly_detection\210624\test') #
     parser.add_argument('--category', default='metal_nut')
     parser.add_argument('--num_epochs', default=1)
