@@ -31,7 +31,7 @@ Please download the MVTec dataset from this [website](https://www.mvtec.com/comp
 
 Inference Code
 ```sh
-python test.py --dataset_path=$DATASET_PATH --result_path=$RESULT_path --category=capsule --n_neighbors=4
+python test.py --dataset_path=$DATASET_PATH --result_path=$RESULT_PATH --category=capsule --project_root_path=$PRETRAINED_MEMORY_DIRECTORY
 ```
 You can download [pretrained memory](https://drive.google.com/drive/folders/1z4dplHddceYLoYiKe29NY_SxeIJFstPu?usp=share_link) from this google link.
 
