@@ -7,7 +7,7 @@ https://arxiv.org/abs/2211.07381
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/fapm-fast-adaptive-patch-memory-for-real-time/anomaly-detection-on-mvtec-ad)](https://paperswithcode.com/sota/anomaly-detection-on-mvtec-ad?p=fapm-fast-adaptive-patch-memory-for-real-time)
 
-We propose a new method called Fast Adaptive Patch Memory (FAPM) for real-time industrial anomaly detection. FAPM utilizes patch-wise and layer-wise memory banks that store the embedding features of images at the patch and layer level, respectively, which eliminates unnecessary repetitive computations. We also propose patch-wise adaptive coreset sampling for faster and more accurate detection. FAPM performs well in both accuracy and speed compared to other state-of-the-art methods.
+ We propose a new method called Fast Adaptive Patch Memory (FAPM) for real-time industrial anomaly detection. FAPM utilizes patch-wise and layer-wise memory banks that store the embedding features of images at the patch and layer level, respectively, which eliminates unnecessary repetitive computations. We also propose patch-wise adaptive coreset sampling for faster and more accurate detection. 
 
 ## Future work
 
