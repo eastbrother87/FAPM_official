@@ -27,11 +27,12 @@ from model import *
 
 def get_args():
     parser = argparse.ArgumentParser(description='ANOMALYDETECTION')
-    parser.add_argument('--phase', choices=['train','test'], default='train')
+    parser.add_argument('--phase', choices=['train','test'], default='test')
     parser.add_argument('--dataset_path', default='/data2/DH2/mvtec') # 'D:\Dataset\mvtec_anomaly_detection')#
+    parser.add_argument('--result_path', default='results/') # 'D:\Project_Train_Results\mvtec_anomaly_detection\210624\test') #
     parser.add_argument('--category', default='metal_nut')
     parser.add_argument('--num_epochs', default=1)
-    parser.add_argument('--batch_size', default=32)
+    parser.add_argument('--batch_size', default=1)
     parser.add_argument('--load_size', default=256) 
     parser.add_argument('--input_size', default=224)
     parser.add_argument('--coreset_sampling_ratio', default=0.1)
@@ -39,7 +40,7 @@ def get_args():
     parser.add_argument('--save_src_code', default=True)
     parser.add_argument('--save_anomaly_map', default=True)
     parser.add_argument('--n_neighbors', type=int, default=4)
-    parser.add_argument('--save_img', type=bool, default=False)
+    parser.add_argument('--save_img', type=bool, default=True)
     parser.add_argument('--score_threshold', type=float, default=0.5)
     parser.add_argument('--adaptive_ratio', type=float, default=2)
     args = parser.parse_args()
@@ -67,6 +68,9 @@ def test(args,model,test_loader):
     model.eval()
     starter, ender = torch.cuda.Event(enable_timing=True), torch.cuda.Event(enable_timing=True)
     embedding_dir_path, _, _ = prep_dirs(args.project_root_path)
+    result_path=os.path.join(args.result_path,args.category)
+    inv_normalize = transforms.Normalize(mean=[-0.485/0.229, -0.456/0.224, -0.406/0.255], std=[1/0.229, 1/0.224, 1/0.255])
+
     
     #### LOAD MEMORY BANK ####
     with open(embedding_dir_path+args.category+".pkl","rb") as f:
@@ -145,6 +149,13 @@ def test(args,model,test_loader):
         pred_list_img_lvl.append(score)
         img_path_list.extend(file_name)
         inference_time_list.append(inference_time)
+        
+        if args.save_img==True:
+            x = inv_normalize(x)
+            input_x = cv2.cvtColor(x.permute(0,2,3,1).cpu().numpy()[0]*255, cv2.COLOR_BGR2RGB)
+            save_anomaly_map(result_path,anomaly_map_resized_blur, input_x, gt_np*255, file_name[0], x_type[0])
+    
+    
     end=time.time()
     print("category:",args.category)
     fps=len(img_path_list)/(end-start)
