@@ -28,7 +28,7 @@ def get_args():
     parser = argparse.ArgumentParser(description='ANOMALYDETECTION')
     parser.add_argument('--phase', choices=['train','test'], default='test')
     parser.add_argument('--dataset_path', default='/data2/DH2/mvtec') # 'D:\Dataset\mvtec_anomaly_detection')#
-    parser.add_argument('--result_path', default='results/') # 'D:\Project_Train_Results\mvtec_anomaly_detection\210624\test') #
+    parser.add_argument('--result_path', default='./results/') # 'D:\Project_Train_Results\mvtec_anomaly_detection\210624\test') #
     parser.add_argument('--category', default='metal_nut')
     parser.add_argument('--num_epochs', default=1)
     parser.add_argument('--batch_size', default=1)
@@ -39,7 +39,7 @@ def get_args():
     parser.add_argument('--save_src_code', default=True)
     parser.add_argument('--save_anomaly_map', default=True)
     parser.add_argument('--n_neighbors', type=int, default=4)
-    parser.add_argument('--save_img', type=bool, default=True)
+    parser.add_argument('--save_img', type=bool, default=False)
     parser.add_argument('--score_threshold', type=float, default=0.5)
     parser.add_argument('--adaptive_ratio', type=float, default=2)
     args = parser.parse_args()
@@ -99,6 +99,9 @@ def test(args,model,test_loader):
     ##GPU WARM UP##
     dummy_input=torch.randn(1,3,224,224).cuda()
     print("GPU WARM UP")
+    if args.save_img==True:
+        os.makedirs(result_path,exist_ok=True)
+    
     for (x, gt, label, file_name, x_type) in test_loader:
         x=x.to(device)
         gt=gt.to(device)
