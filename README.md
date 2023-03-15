@@ -37,14 +37,14 @@ You can download [pretrained memory](https://drive.google.com/drive/folders/1z4d
 
 ## Citation
 Cite as below if you find this repository is helpful to your project:
-'''sh
+```sh
 @article{kim2022fapm,
   title={FAPM: Fast Adaptive Patch Memory for Real-time Industrial Anomaly Detection},
   author={Kim, Donghyeong and Park, Chaewon and Cho, Suhwan and Lee, Sangyoun},
   journal={arXiv preprint arXiv:2211.07381},
   year={2022}
 }
-'''
+```
 
 ## Acknowledgement
 
