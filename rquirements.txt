@@ -1,0 +1,8 @@
+einops
+pytorch_lightning
+opencv-python
+scipy
+tqdm
+scikit-image
+sklearn
+pickle
