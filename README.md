@@ -21,7 +21,7 @@ conda environment
 ```sh
 conda create -n FAPM
 conda activate FAPM
-pip install -r requiremnets.txt
+pip install -r requirements.txt
 
 ```
 ## Dataset
