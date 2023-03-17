@@ -19,8 +19,10 @@ https://arxiv.org/abs/2211.07381
 
 conda environment
 ```sh
+git clone https://github.com/donghyung87/FAPM_official.git
 conda create -n FAPM
 conda activate FAPM
+
 pip install -r requirements.txt
 
 ```
