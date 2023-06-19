@@ -13,7 +13,6 @@ https://arxiv.org/abs/2211.07381
 
 - [x] Inference Code
 - [x] Pretrained Memory 
-- [ ] Training Code 
 
 ## Development setup
 
