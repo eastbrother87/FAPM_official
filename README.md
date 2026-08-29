@@ -36,7 +36,7 @@ Inference Code
 ```sh
 python test.py --dataset_path=$DATASET_PATH --result_path=$RESULT_PATH --category=capsule --project_root_path=$PRETRAINED_MEMORY_DIRECTORY
 ```
-You can download [pretrained memory](https://drive.google.com/drive/folders/1z4dplHddceYLoYiKe29NY_SxeIJFstPu?usp=share_link) from this google link.
+You can download [pretrained memory](https://huggingface.co/buckets/Donghyeong/FAPM_pretrained_memory_Mvtec) from this google link.
 
 ## Citation
 Cite as below if you find this repository is helpful to your project:
